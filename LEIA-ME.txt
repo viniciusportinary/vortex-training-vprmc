@@ -1,0 +1,18 @@
+VORTEX TRAINING — ARQUIVOS COMPLETOS
+
+Arquivos:
+- login.html, login.css, login.js: abertura animada, login demonstrativo e cadastro demonstrativo.
+- vp.html, vp.css, vp.js: painel responsivo para organizar treinos.
+- logo.jpeg: coloque sua imagem de logo nessa pasta com esse nome.
+
+COMO USAR:
+1. Coloque todos os arquivos em uma única pasta.
+2. Adicione sua imagem de logo com o nome logo.jpeg.
+3. Abra login.html no navegador.
+4. Preencha os campos e o site abrirá vp.html.
+
+SEM BANCO DE DADOS:
+- A agenda usa localStorage para salvar os treinos neste navegador.
+- Login e cadastro são demonstrativos: não verificam contas reais.
+- A página vp.html pode ser aberta diretamente.
+- Limpar os dados do navegador pode apagar os treinos salvos.

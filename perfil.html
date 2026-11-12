@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080810">
+    <title>Meu Perfil | VORTEX TRAINING</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <main class="profile-container">
+
+        <header class="profile-header">
+            <a href="index.html" class="back-button">← Voltar ao painel</a>
+
+            <div class="brand">
+                <img src="logo vp.png" alt="Vortex Training">
+                <div>
+                    <strong>VORTEX</strong>
+                    <span>TRAINING</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="profile-content">
+
+            <div class="page-heading">
+                <span class="eyebrow">SUA IDENTIDADE</span>
+                <h1>Meu perfil<span>.</span></h1>
+                <p>Gerencie suas informações e personalize sua experiência.</p>
+            </div>
+
+            <div class="profile-card">
+
+                <div class="profile-cover"></div>
+
+                <div class="profile-main">
+
+                    <div class="avatar-section">
+                        <div class="avatar-wrapper">
+                            <img id="profileImage" src="" alt="Foto de perfil">
+                            <div id="avatarInitials">VT</div>
+                        </div>
+
+                        <label for="photoInput" class="change-photo">
+                            Alterar foto
+                        </label>
+
+                        <input type="file" id="photoInput" accept="image/png,image/jpeg,image/webp">
+                        <small>PNG, JPG ou WEBP · Máximo 2 MB</small>
+                    </div>
+
+                    <div class="profile-details">
+                        <span class="account-status">
+                            <span class="status-dot"></span>
+                            CONTA VORTEX
+                        </span>
+
+                        <h2 id="displayName">Usuário Vortex</h2>
+                        <p id="displayEmail">usuario@email.com</p>
+                    </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <form id="profileForm">
+
+                    <div class="form-heading">
+                        <div>
+                            <span class="eyebrow">INFORMAÇÕES PESSOAIS</span>
+                            <h3>Dados da conta</h3>
+                        </div>
+                        <span class="edit-indicator">EDITÁVEL</span>
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="fullName">Nome completo</label>
+                            <input type="text" id="fullName" placeholder="Seu nome completo" required minlength="2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Endereço de e-mail</label>
+                            <input type="email" id="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="bio">Sobre mim</label>
+                            <textarea id="bio" rows="4" maxlength="300" placeholder="Conte um pouco sobre você e seus objetivos..."></textarea>
+                            <small class="character-count"><span id="bioCount">0</span>/300 caracteres</small>
+                        </div>
+
+                    </div>
+
+                    <div id="message" class="message"></div>
+
+                    <div class="form-actions">
+                        <button type="button" id="cancelButton" class="secondary-button">
+                            CANCELAR
+                        </button>
+
+                        <button type="submit" class="save-button">
+                            SALVAR ALTERAÇÕES
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="security-note">
+                <span>ⓘ</span>
+                <p>Suas informações são armazenadas localmente neste navegador. Esta versão ainda não utiliza um banco de dados.</p>
+            </div>
+
+            <footer>
+                VORTEX TRAINING · FOCO. CONSTÂNCIA. EVOLUÇÃO.
+            </footer>
+
+        </section>
+    </main>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

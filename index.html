@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080810">
+    <meta name="description" content="VORTEX TRAINING — organize seus treinos e acompanhe sua evolução.">
+    <title>VORTEX TRAINING</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="vp.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="logo vp.png" alt="Vortex Training">
+            <div>
+                <strong>VORTEX</strong>
+                <span>TRAINING</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="#inicio" class="nav-link active">⌂ <span>Início</span></a>
+            <a href="#agendar" class="nav-link">＋ <span>Agendar treino</span></a>
+            <a href="#agenda" class="nav-link">▤ <span>Minha agenda</span></a>
+            <a href="perfil.html" class="nav-link">◎ <span>Meu perfil</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>DISCIPLINA. FOCO. EVOLUÇÃO.</p>
+            <span>© 2026 VORTEX TRAINING</span>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">DISCIPLINA • FOCO • EVOLUÇÃO</span>
+                <h1>Meu painel.</h1>
+                <p>Organize sua rotina e acompanhe sua evolução.</p>
+            </div>
+
+            <a href="perfil.html" class="profile-shortcut">
+                <div class="avatar" id="headerAvatar">VT</div>
+                <div>
+                    <strong id="headerName">Minha conta</strong>
+                    <span>Meu perfil</span>
+                </div>
+            </a>
+        </header>
+
+        <section id="inicio" class="dashboard-section">
+            <div class="welcome-card">
+                <div>
+                    <span class="eyebrow">SEU PRÓXIMO NÍVEL COMEÇA AGORA</span>
+                    <h2>Construa sua evolução.</h2>
+                    <p>Não espere motivação. Crie disciplina.</p>
+                    <a href="#agendar" class="primary-button">AGENDAR TREINO</a>
+                </div>
+                <div class="welcome-symbol">V</div>
+            </div>
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">SEU DESEMPENHO</span>
+                    <h2>Visão geral</h2>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <span>Total de treinos</span>
+                    <strong id="totalTreinos">0</strong>
+                    <small>Treinos na agenda</small>
+                </article>
+
+                <article class="stat-card">
+                    <span>Concluídos</span>
+                    <strong id="totalConcluidos">0</strong>
+                    <small>Treinos finalizados</small>
+                </article>
+
+                <article class="stat-card">
+                    <span>Próximo treino</span>
+                    <strong id="proximoTreino">—</strong>
+                    <small id="dataProximo">Nenhum agendado</small>
+                </article>
+            </div>
+        </section>
+
+        <section id="agendar" class="content-card">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">PLANEJE SUA ROTINA</span>
+                    <h2>Agendar treino</h2>
+                </div>
+            </div>
+
+            <form id="treinoForm">
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="nomeTreino">Nome do treino</label>
+                        <input type="text" id="nomeTreino" placeholder="Ex.: Treino de força" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoTreino">Grupo muscular</label>
+                        <select id="tipoTreino" required>
+                            <option value="">Selecione</option>
+                            <option>Peito</option>
+                            <option>Costas</option>
+                            <option>Bíceps e tríceps</option>
+                            <option>Ombros</option>
+                            <option>Pernas</option>
+                            <option>Abdômen</option>
+                            <option>Cardio</option>
+                            <option>Corpo inteiro</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duracao">Duração</label>
+                        <select id="duracao" required>
+                            <option value="30">30 minutos</option>
+                            <option value="45">45 minutos</option>
+                            <option value="60" selected>60 minutos</option>
+                            <option value="90">90 minutos</option>
+                            <option value="120">120 minutos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataTreino">Data</label>
+                        <input type="date" id="dataTreino" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horaTreino">Horário</label>
+                        <input type="time" id="horaTreino" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" rows="3" placeholder="Adicione informações sobre seu treino..."></textarea>
+                    </div>
+
+                </div>
+
+                <p id="mensagem" class="form-message"></p>
+                <button type="submit" class="primary-button">ADICIONAR À AGENDA</button>
+            </form>
+        </section>
+
+        <section id="agenda" class="content-card">
+            <div class="section-heading agenda-heading">
+                <div>
+                    <span class="eyebrow">SUA ORGANIZAÇÃO</span>
+                    <h2>Minha agenda</h2>
+                </div>
+                <span id="contadorAgenda" class="agenda-counter">0 treinos</span>
+            </div>
+
+            <div id="listaTreinos" class="workout-list"></div>
+        </section>
+
+        <footer class="footer">
+            <p>VORTEX TRAINING — FOCO. CONSTÂNCIA. EVOLUÇÃO.</p>
+        </footer>
+
+    </main>
+</div>
+
+<script src="vp.js"></script>
+</body>
+</html>

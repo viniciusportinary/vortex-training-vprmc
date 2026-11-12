@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080810">
+    <meta name="description" content="VORTEX TRAINING — organize seus treinos e acompanhe sua evolução.">
+
+    <title>Acesso VORTEX TRAINING</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+
+    <!-- TELA DE CARREGAMENTO -->
+    <div class="splash" id="splash">
+        <div class="splash-logo">
+            <img src="logo vp.png" alt="Vortex Training">
+        </div>
+
+        <h1>VORTEX <span>TRAINING</span></h1>
+        <p>FOCO. CONSTÂNCIA. EVOLUÇÃO.</p>
+
+        <div class="load">
+            <i></i>
+        </div>
+
+        <small>PREPARANDO SUA JORNADA</small>
+    </div>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <main class="layout" id="layout">
+
+        <!-- PAINEL DE APRESENTAÇÃO -->
+        <section class="intro">
+
+            <a class="brand" href="login.html">
+                <img src="logo vp.png" alt="Logo Vortex Training">
+                <b>VORTEX <span>TRAINING</span></b>
+            </a>
+
+            <div class="intro-copy">
+
+                <small class="eyebrow">
+                    ● BEM-VINDO AO VORTEX
+                </small>
+
+                <h1>
+                    Sua força.<br>
+                    <span>Sua jornada.</span>
+                </h1>
+
+                <p>
+                    Organize seus treinos, acompanhe seu progresso
+                    e construa uma rotina que aproxime você dos seus
+                    objetivos, um dia de cada vez.
+                </p>
+
+                <!-- EFEITO VISUAL -->
+                <div class="energy">
+                    <i class="ring r1"></i>
+                    <i class="ring r2"></i>
+                    <i class="ring r3"></i>
+
+                    <img src="logo vp.png" alt="Capa Vortex Training">
+                </div>
+
+                <!-- FRASE MOTIVACIONAL -->
+                <div class="quote">
+                    <b>✦</b>
+                    <div>
+                        <strong>
+                            Não espere motivação. Construa disciplina.
+                        </strong>
+                        <p>
+                            Pequenos passos. Grandes conquistas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer>
+                © <span id="year"></span> VORTEX TRAINING
+                <span>● UM DIA DE CADA VEZ</span>
+            </footer>
+
+        </section>
+
+        <!-- PAINEL DOS FORMULÁRIOS -->
+        <section class="forms">
+
+            <header class="form-top">
+                <small>SUA PRÓXIMA FASE COMEÇA AQUI</small>
+
+                <nav>
+                    <button
+                        class="tab active"
+                        id="loginTab"
+                        type="button"
+                    >
+                        Entrar
+                    </button>
+
+                    <button
+                        class="tab"
+                        id="signupTab"
+                        type="button"
+                    >
+                        Criar conta
+                    </button>
+                </nav>
+            </header>
+
+            <!-- FORMULÁRIO DE LOGIN -->
+            <div id="loginView">
+
+                <div class="heading">
+                    <small>BOM TER VOCÊ DE VOLTA</small>
+
+                    <h2>
+                        Olá novamente<span>!</span>
+                    </h2>
+
+                    <p>
+                        Preencha os campos para continuar sua jornada.
+                    </p>
+                </div>
+
+                <p class="message" id="loginMessage"></p>
+
+                <form id="loginForm">
+
+                    <!-- E-MAIL -->
+                    <label for="loginEmail">E-mail</label>
+
+                    <div class="input">
+                        <span aria-hidden="true">✉</span>
+
+                        <input
+                            id="loginEmail"
+                            name="loginEmail"
+                            type="email"
+                            placeholder="seuemail@exemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <!-- SENHA -->
+                    <div class="label-row">
+                        <label for="loginPassword">Senha</label>
+
+                        <button
+                            type="button"
+                            class="text-btn"
+                            id="forgot"
+                        >
+                            Esqueceu a senha?
+                        </button>
+                    </div>
+
+                    <div class="input">
+                        <span aria-hidden="true">♙</span>
+
+                        <input
+                            id="loginPassword"
+                            name="loginPassword"
+                            type="password"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-pass"
+                            data-target="loginPassword"
+                            aria-label="Mostrar senha"
+                            aria-pressed="false"
+                        >
+                            ◉
+                        </button>
+                    </div>
+
+                    <!-- LEMBRAR DE MIM -->
+                    <label class="check">
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+                        Lembrar de mim neste dispositivo
+                    </label>
+
+                    <!-- BOTÃO DE ENTRADA -->
+                    <button class="submit" type="submit">
+                        <span>Entrar no VORTEX</span>
+                        <b aria-hidden="true">→</b>
+                    </button>
+
+                    <p class="note">
+                        Acesso demonstrativo: não há autenticação real.
+                    </p>
+
+                </form>
+
+                <p class="switch">
+                    Ainda não tem uma conta?
+
+                    <button
+                        type="button"
+                        class="switch-btn"
+                        data-view="signup"
+                    >
+                        Criar conta
+                    </button>
+                </p>
+
+            </div>
+
+            <!-- FORMULÁRIO DE CADASTRO -->
+            <div id="signupView" hidden>
+
+                <div class="heading">
+                    <small>COMECE A SUA JORNADA</small>
+
+                    <h2>
+                        Crie seu <span>espaço.</span>
+                    </h2>
+
+                    <p>
+                        Prepare seu perfil e dê o primeiro passo.
+                    </p>
+                </div>
+
+                <p class="message" id="signupMessage"></p>
+
+                <form id="signupForm">
+
+                    <!-- NOME -->
+                    <label for="signupName">Nome</label>
+
+                    <div class="input">
+                        <span aria-hidden="true">♙</span>
+
+                        <input
+                            id="signupName"
+                            name="signupName"
+                            type="text"
+                            placeholder="Como podemos chamar você?"
+                            autocomplete="name"
+                            minlength="2"
+                            required
+                        >
+                    </div>
+
+                    <!-- E-MAIL -->
+                    <label for="signupEmail">E-mail</label>
+
+                    <div class="input">
+                        <span aria-hidden="true">✉</span>
+
+                        <input
+                            id="signupEmail"
+                            name="signupEmail"
+                            type="email"
+                            placeholder="seuemail@exemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <!-- CRIAR SENHA -->
+                    <label for="signupPassword">
+                        Crie uma senha
+                    </label>
+
+                    <div class="input">
+                        <span aria-hidden="true">♙</span>
+
+                        <input
+                            id="signupPassword"
+                            name="signupPassword"
+                            type="password"
+                            placeholder="Mínimo de 8 caracteres"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-pass"
+                            data-target="signupPassword"
+                            aria-label="Mostrar senha"
+                            aria-pressed="false"
+                        >
+                            ◉
+                        </button>
+                    </div>
+
+                    <!-- FORÇA DA SENHA -->
+                    <div class="strength">
+                        <i id="strengthBar"></i>
+                    </div>
+
+                    <small id="strengthLabel">
+                        Digite uma senha.
+                    </small>
+
+                    <!-- CONFIRMAR SENHA -->
+                    <label for="confirmPassword">
+                        Confirme a senha
+                    </label>
+
+                    <div class="input">
+                        <span aria-hidden="true">♙</span>
+
+                        <input
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            type="password"
+                            placeholder="Digite a senha novamente"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <!-- TERMOS -->
+                    <label class="check">
+                        <input
+                            type="checkbox"
+                            id="acceptTerms"
+                            name="acceptTerms"
+                            required
+                        >
+                        Entendi que este cadastro é demonstrativo.
+                    </label>
+
+                    <!-- BOTÃO DE CADASTRO -->
+                    <button class="submit" type="submit">
+                        <span>Continuar para o VORTEX</span>
+                        <b aria-hidden="true">→</b>
+                    </button>
+
+                </form>
+
+                <p class="switch">
+                    Já tem uma conta?
+
+                    <button
+                        type="button"
+                        class="switch-btn"
+                        data-view="login"
+                    >
+                        Entrar
+                    </button>
+                </p>
+
+            </div>
+
+            <!-- RODAPÉ -->
+            <footer class="bottom">
+                VORTEX <span>TRAINING</span>
+                <small>FOCO NO PROCESSO ✦</small>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
